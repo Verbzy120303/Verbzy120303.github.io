@@ -76,7 +76,7 @@ nav{
 }
 
 .logo a img{
-    width: 50px;
+    width: 60px;
     margin-right: 10px;
 }
 
@@ -84,7 +84,6 @@ nav{
     float: left;
     overflow: hidden;
     font-weight: 200;
-    margin-left: 20px;
 }
 
 .account button{
@@ -107,6 +106,57 @@ nav{
     margin-left: 5px;
 }
 
+.account .drop {
+    cursor: pointer;
+    font-size: 15px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.account .drop i{
+    margin-left: 5px;
+}
+
+.drop .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.drop .2);
+    z-index: 1;
+}
+
+.drop .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 500;
+}
+
+.drop .dropdown-content .drop-divider{
+    border-bottom: 1px solid gray;
+}
+
+.drop .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.drop .show {
+    display: block;
+}
+
+.account:hover .drop{
+    color: #AD6343;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -123,6 +173,11 @@ nav{
     text-decoration: none;
     display: block;
     text-align: left;
+    font-weight: 500;
+}
+
+.dropdown-content .drop-divider{
+    border-bottom: 1px solid gray;
 }
 
 .dropdown-content a:hover {
@@ -273,10 +328,10 @@ nav{
 }
 
 .content p{
-    padding: 25px 45px;
+    padding: 25px 40px;
     line-height: 30px;
     word-spacing: 2px;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 25px;
 }
 
@@ -356,10 +411,10 @@ nav{
 }
 
 .content2 p{
-    padding: 25px 145px;
+    padding: 25px 135px;
     line-height: 30px;
     word-spacing: 3px;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 25px;
 }
 
@@ -486,6 +541,8 @@ nav{
     width: 290px;
     border: none;
     font-family: 'Lato', sans-serif;
+    outline: none;
+    border: none;
 }
 
 .footer-content .submit{
@@ -693,9 +750,9 @@ nav{
 }
 
 .content3-content .content3-para{
-    font-weight: 300;
+    font-weight: 500;
     line-height: 30px;
-    padding: 0 22px;
+    padding: 0 15px;
 }
 
 #content4{
@@ -734,9 +791,9 @@ nav{
 }
 
 .content4-content .content4-para{
-    font-weight: 300;
+    font-weight: 500;
     line-height: 30px;
-    padding: 0 22px;
+    padding: 0 15px;
 }
 
 #content5{
@@ -772,7 +829,274 @@ nav{
 }
 
 .content5-content .content5-para{
-    font-weight: 300;
+    font-weight: 500;
     line-height: 30px;
-    padding: 0 22px;
+    padding: 0 17px;
+}
+
+
+/* SIGN IN */
+
+.signin{
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.signup{
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 110vh;
+    background-color: #f9f9f9;
+}
+
+.signin-container{
+    background-color: white;
+    width: 550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+}
+
+.signin-title{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.signin-title h1{
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.signin-container .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid black;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 400px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    line-height: 50px;
+    font-size: 17px;
+}
+
+.remember{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember label{
+    letter-spacing: 1px;
+}
+
+.remember label input{
+    accent-color: black;
+    margin-right: 3px;
+}
+
+.remember a{
+    color: #AD6343;
+}
+
+.remember a:hover{
+    text-decoration: underline;
+}
+
+.signin-btn{
+    width: 100%;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.signin-btn:hover{
+    background-color: #AD6343;
+}
+
+.or{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.signin-icons{
+    margin-top: 25px;
+}
+
+.signin-icons a{
+    color: black;
+    transition: all 0.3 ease-in-out;
+    width: 50px;
+}
+
+.signin-icons a i{
+    color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+    padding: 7px;
+}
+
+.signin-icons a i:hover{
+    background-color: black;
+    color: white;
+}
+
+.register{
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 70px;
+}
+
+.register a{
+    font-weight: 500;
+    color: #AD6343;
+}
+
+.register a:hover{
+    text-decoration: underline;
+}
+
+/* SHOPPING BAG */
+
+.shoppingbag{
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.shoppingbag-container{
+    background-color: white;
+    width: 1300px;
+    height: 650px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+}
+
+.bag-title{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    font-size: 13px;
+    padding: 20px 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    cursor: default;
+}
+
+.edit{
+    font-size: 8px;
+    cursor: pointer;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+
+.add{
+    margin-left: 890px;
+    font-size: 8px;
+    cursor: pointer;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+
+.add h1{
+    font-weight: 300;
+}
+
+.add h1:hover{
+    text-decoration: underline;
+}
+
+.edit h1{
+    font-weight: 300;
+}
+
+.edit h1:hover{
+    text-decoration: underline;
+}
+
+.bag-empty{
+    font-family: 'Poppins', sans-serif;
+}
+
+.bag-empty h1{
+    text-align: center;
+    margin-top: 150px;
+    font-weight: 400;
+}
+
+.bag-empty p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.bag-shop{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bag-shop a{
+    background-color: black;
+    padding: 15px 20px;
+    color: white;
+    transition: .3s ease-in-out;
+    font-size: 15px;
+}
+
+.bag-shop a:hover{
+    background-color: #AD6343;
 }

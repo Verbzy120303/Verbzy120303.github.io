@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vermar Threads</title>
+    <link rel="icon" href="images/logo/logo white.png">
+    <link rel="stylesheet" href="images/logo/logo white.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="desktop-nav">
+        <div class="logo"><a href="#home"><img src="images/logo/logo white.png">VERMAR THREADS</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <div class="account">
+                    <button class="drop" onclick="myFunction1()">Products
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                      <div class="dropdown-content" id="Dropdown">
+                        <a href="women's.html">Women</a>
+                        <a href="men's.html">Men</a>
+                      </div>
+                </div>
+                <li><a href="shopall.html">Shop All</a></li>
+                <li><a href="about.html">About</a></li>
+                <div class="account">
+                    <button class="dropbtn" onclick="myFunction()">Acount
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                      <div class="dropdown-content" id="myDropdown">
+                        <a href="mypurchases.html">My Purchases</a>
+                        <a href="myvouchers.html">My Vouchers</a>
+                        <a href="myaddresses.html" class="drop-divider">My Addresses</a>
+                        <a href="signin.html">Sign In</a>
+                        <a href="signup.html">Sign Up</a>
+                      </div>
+                </div>
+                <div class="bag">
+                    <a href="shoppingbag.html" class="active"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="shoppingbag">
+        <div class="shoppingbag-container">
+            <div class="bag-title">
+                <div class="bag">
+                    <h1>My Vouchers</h1>
+                </div>
+                <div class="edit">
+                    <h1>Edit</h1>
+                </div>
+            </div>
+            
+            <div class="bag-empty">
+                <h1>You currently have 0 vouchers</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
