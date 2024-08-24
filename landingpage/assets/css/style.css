@@ -38,6 +38,7 @@ img{
     height: auto;
 }
 
+
 .section-padding{
     padding-top: 140px;
     padding-bottom: 140px;
@@ -102,16 +103,17 @@ img{
     color: white;
 }
 
+
 /* Hero */
 #hero{
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/hero1.jpg);
-    background-position: center;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/hero2.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .hero-title{
-    letter-spacing: 0.3em;
-    margin-right: -0.3em;
+    letter-spacing: 0.2em;
+    margin-right: -0.2em;
 }
 
 /* Section Title */
